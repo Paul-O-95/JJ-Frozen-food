@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JJ frozen food</title>
+    <body>
+        <div class="navbar navbar-default navbar-static-top navbar-fixed-top" role="navigation" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            <div class="container">
+              <div class="navbar-header">
+                <h4 style="margin-top: 18px;">
+                  <span onclick = "openNav()" style="cursor: pointer;"><i class="fa fa-navicon"></i></span>
+                </h4> 
+              </div>
+              <div id="mySidenav" class="sidenav navbar navbar-default">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <a href="#updates">Updates</a>
+                 <a href="#testimonials">Testimonials</a>
+                 <a href="#gallery">Gallery</a>
+                 <a href="#contact">Contact</a>
+              </div>
+                <div class="navbar-header">
+                    <h4 style="margin-top: 18px;">
+                      <a  title="Homepage" class="navbar-header-text" href="/"></i>JJ FROZEN FOOD</a>
+                    </h4>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li title="Get Quote"><a href="" class="btn-createModal"><i class="fa fa-file-text-o"></i>Get Quote</a></li>
+                    <li title="Call now"><a href="tel:07032292277"><i class="fa fa-phone e-btn e-link"></i>Call now</a></li>
+                    <li title="Get Directions"><a href="https://goo.gl/maps/boo5vTzW3Yx22pEJ6"><i class="fa fa-map-marker"></i>Get Directions</a></li>
+                </ul>  
+            </div>
+        </div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+    <!-- Bootstrap -->
+    <link href="/public/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="home_area">
+        <section class="col-md-12">
+          {{{body}}}
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="col-md-12">
+          <p class="text-center">
+            &copy; Copyright JJ FROZEN FOOD 2019. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="/public/js/script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,304 @@
+/*Global section*/
+html {
+  scroll-behavior: smooth;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/*Header Section*/
+
+.navbar-default {
+    background-color: #fff!important;
+}
+
+.navbar-header-text {
+    font-weight: bolder;
+    margin-left: 30px;
+    /* color: rgb(248, 252, 4); */
+}
+
+.navbar-header-text:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+ul li a {
+  color: rgb(47, 102, 204)!important;
+}
+
+ul li a:hover {
+  color: gray !important;
+}
+
+ul li i{
+  margin-right: 10px;
+}
+
+h4 span i{
+  color: rgb(47, 102, 204)!important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    margin-top: 52px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(47, 102, 204)!important;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: gray !important;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  /*Header Section*/
+
+
+  /*Main Section*/
+  h1 {
+    color: rgb(70, 115, 199)!important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-weight: bolder;
+    padding-top: 100px;
+  }
+
+  .get-quote{
+    margin-top: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 20px 35px;
+    color: #fff;
+    background-color: rgb(70, 115, 199);
+    border: none;
+    border-radius: 2px;
+  }
+
+  .frozen-fish{
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  #updates, #testimonials, #contact, #gallery{
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+
+
+  /*Quote modal*/
+  .modal {
+    margin-top: 50px;
+  }
+
+  .modal-header{
+    padding-top: 3px;
+  }
+
+  .input {
+    height: 30px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    border: none; 
+    border-bottom: #888690 solid 1px;
+    background: none
+  }
+
+  .submit-button{
+    color: #fff;
+    background-color: rgb(70, 115, 199);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 1px;
+    font-size: 16px;
+  }
+  /*Quote modal style end*/
+
+  .new-section-line{
+    border: 0;
+    clear:both;
+    display:block;
+    margin-left: 600px;
+    margin-right: 600px;               
+    background-color:black;
+    height: 2px;
+  }
+
+  .new-section{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -4px;
+  }
+
+  /*Testimonial section*/
+  .review-button{
+    display: flex;
+    justify-content: center;
+    color: rgb(70, 115, 199);
+  }
+
+  .write-review-button h5{
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(70, 115, 199);
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .write-review-button :hover{
+    color: rgb(109, 141, 199);
+    border-color: rgb(109, 141, 199);
+  }
+
+  .read-more-button :hover{
+    color: rgb(109, 141, 199);
+    border-color: rgb(109, 141, 199);
+  }
+
+  .read-more-button h5{
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(70, 115, 199);
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  /*Review Modal*/
+  .fade-scale {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+  }
+
+  .fade-scale.in {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .review-modal-form{
+    margin-left: 10px;
+    margin-top: -15px;
+  }
+
+  .rate {
+    float: left;
+    margin-left: 13px;
+  }
+
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/*Review Modal end*/
+/*Testimonial section end*/
+
+
+/*Gallery Section*/
+.images{
+  margin-top: 40px;
+}
+
+.images-row1{
+  display: flex;
+  justify-content: space-around;
+}
+/*Gallery Section end*/
+
+/*Contact us section*/
+.google-map-link{
+  margin-top: 40px;
+}
+
+.address{
+  margin-left: 200px;
+  margin-right: 120px;
+}
+
+.contactUs{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.contactUs-header{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.contact-number button, .address button{
+  margin-top: 10px;
+  font-family:monospace;
+  padding: 15px 20px;
+  color: #fff;
+  background-color: rgb(70, 115, 199);
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+
+
+
+
+
+

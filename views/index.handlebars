@@ -1,0 +1,209 @@
+<section class="text-center">
+    <div>
+        <h1>
+            JJ FROZEN FOOD
+        </h1>
+        <p style="font-size: 15px;">BUY YOUR FOOD STUFF &amp; FROZEN FOODS HERE</p>
+        <p style="font-size: 15px;" class="opening-time"></p>
+        <button style="font-size: 18px;" class="get-quote btn-createModal" title="Get Quote">GET QUOTE</button>
+    </div>
+    <div class="frozen-fish">
+        <img src="../public/images/FROZEN-FOODS-BUSINESS-PLAN-IN-NIGERIA-1024x474.jpg" alt="frozen-fish" style="width:1000px;">
+    </div>
+
+{{!-- Get quote Modal --}}
+<div class="modal" style="font-family: Georgia, 'Times New Roman', Times, serif;" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+​
+      <div class="modal-header text-left navbar-default">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Get quote</h4>
+      </div>
+​
+        <div class="modal-body">
+          <form method="post" action="/quote" class="form-horizontal" role="form" id="quoteForm">
+          <div class="form-group">
+              <div class="col-sm-12">
+                  <input name="name" type="input" class="form-control input" placeholder="Name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                  <input name="phone" type="input" class="form-control input" placeholder="Phone number">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                  <input name="email" type="input" class="form-control input" placeholder="Email" required>
+                  <p class="text-left" style="font-size:11px;margin-top:5px;">&#42;Valid email address required</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <div class="col-sm-7">
+              <p class="text-left" style="font-size:12px;">How can we help you?</p>
+              <textarea name="request" class="input" cols="78" type="input" 
+              placeholder="I was wondering about availability and rates. I need help with the following:"></textarea>
+            </div>
+          </div>
+            <div class="form-group text-right">
+                <div class="col-sm-12">
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </div>
+        </form>               
+        </div>
+​
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+</section>
+
+
+{{!-- Review Modal --}}
+<div class="modal fade-scale" style="font-family: Georgia, 'Times New Roman', Times, serif;" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+​
+      <div class="modal-header text-left navbar-default">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Did you enjoy JJ frozen food?</h4>
+      </div>
+​
+        <div class="modal-body review-modal-body">
+          <form method="post" action="/rate" class="form-horizontal review-modal-form" role="form" id="reviewForm">
+          <div class="form-group">
+             <div class="rate" name = "rating">
+              <h4>Rate our service</h4>
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+          </div>
+            <div class="form-group">
+              <div class="col-sm-10 ">
+               <textarea name="review" class="form-control input1" placeholder="Describe your experience with JJ"></textarea>
+            </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input type="input" name="name" class="form-control input1" placeholder="Name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="submit" class="submit-button">Submit</button>
+              </div>
+            </div>
+          </form>      
+        </div>
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+</section>
+
+
+
+{{!-- Updates section --}}
+
+<hr class="new-section-line">
+<h3 class="text-center new-section">UPDATES</h3>
+
+<section id="updates">
+  <h5>No new updates</h5>
+
+</section>
+
+{{!-- Testimonials section --}}
+<hr class="new-section-line">
+<h3 class="text-center new-section">TESTIMONIALS</h3>
+
+{{!-- <section id="testimonials">
+  <div class="reviews">
+    {{#if reviews}}
+    {{#each comments}}
+    <div class="rating&timePosted">
+      <div class="rating">
+        {{rating}}
+      </div>
+      <div class="timePosted">
+        <small>{{timeago timestamp}}</small>
+      </div>
+    </div>
+  </div> --}}
+
+
+
+  <div class="review-button">
+    <div class="write-review-button">
+      <h5 class="btn-createReviewModal">WRITE A REVIEW</h5>
+    </div>
+    <div class="read-more-button">
+      <h5>READ MORE</h5>
+    </div>
+  </div>
+
+</section>
+
+{{!-- Gallery section --}}
+<hr class="new-section-line">
+<h3 class="text-center new-section">GALLERY</h3>
+
+<section id="gallery">
+  <div class="">
+  </div>
+
+</section>
+
+{{!-- Contact section --}}
+<hr class="new-section-line">
+<h3 class="text-center new-section">CONTACT US</h3>
+
+<section id="contact">
+  <div class="google-map-link">
+    <a href="http:////goo.gl/maps/5mJZjQfUzhaQGEcV6">
+    <img title="Map showing business location" src="../public/images/Map showing shop location edit2.png" width ="1000" height="550" 
+    alt="Map showing shop locaton">
+    </a>
+  </div>
+
+  <div class="contactUs">
+    <div class="contact-number">
+      <h3 class="contactUs-header">Contact</h3>
+      <a href="tel:07032292277"><i class="e-btn e-link"></i><button>Call now</button></a>
+      <p style="font-size: large; margin-top: 20px; font-family:monospace;">0703 229 2277 <br>0905 155 8834</p>
+    </div>
+
+    <div class="address">
+      <h3 class="contactUs-header">Address</h3>
+      <a href="https://goo.gl/maps/boo5vTzW3Yx22pEJ6"><button>Get Directions</button></a>
+      <p style="font-size: large; margin-top: 20px; font-family:monospace;">Shop 28 Abiodun Jagun street, <br> POWA shopping complex. <br> Ogba, <br> Lagos, Nigeria</p>
+
+    </div>
+
+    <div class="business-hours">
+      <h3 class="contactUs-header">Business Hours</h3>
+      <div style="font-size: large; margin-top: 20px; font-family:monospace;">
+      <p>Mon:  8:00 AM - 22:00 PM</p>
+      <p>Tue:  8:00 AM - 22:00 PM</p>
+      <p>Wed:  8:00 AM - 22:00 PM</p>
+      <p>Thu:  8:00 AM - 22:00 PM</p>
+      <p>Fri:  8:00 AM - 22:00 PM</p>
+      <p>Sat:  8:00 AM - 22:00 PM</p>
+      <p>Sun:  8:00 AM - 2:00 PM</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
