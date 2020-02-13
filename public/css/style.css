@@ -191,6 +191,11 @@ h4 span i{
     cursor: pointer;
   }
 
+  .rating-and-timePosted{
+    display: flex;
+    flex-direction: row;
+  }
+
   /*Review Modal*/
   .fade-scale {
     transform: scale(0);

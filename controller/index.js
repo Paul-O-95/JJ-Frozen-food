@@ -32,7 +32,9 @@ module.exports = {
         let newReviewModel = new ReviewModel({ rating, review, name });
         newReviewModel.save(function (err, result) {
             if (err) throw err;
+            console.log(result)
             res.redirect(`/#${result._id}`);
+            
         });
     }
 }
