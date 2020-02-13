@@ -3,28 +3,28 @@ let ReviewModel = require('../models/review');
 module.exports = {
     home: function (req, res) {
         let viewModel = {
-            layout: 'main'
+            layout: 'main',
+            review: []
+        };
 
-        }
-        res.render('index', viewModel);
+        ReviewModel.find({}, function (err, result) {
+            if (err) throw err;
+            console.log(result.rating);
 
+            if (result) {
+                viewModel.review = result;
+                viewModel.review.forEach(element => {
+                    console.log(element.rating);
+
+                });
+
+                res.render('index', viewModel);
+            } else {
+                res.redirect('/');
+            }
+        }).lean();
     },
 
-    // review: function (req, res) {
-    //     if (!err) {
-    //         let newReview = new ReviewModel(req.body);
-
-    //         newReview.save(function (err, review) {
-    //             if (err) {
-    //                 throw err
-    //             } else {
-    //                 res.redirect('/' + '#' + review._id)
-    //             }
-    //         });
-    //     } else {
-    //         res.redirect('/')
-    //     }
-    // }
 
     review: async function (req, res, next) {
         const { rating, review, name } = req.body;
