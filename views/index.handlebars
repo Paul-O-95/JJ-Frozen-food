@@ -135,17 +135,25 @@
 <h3 class="text-center new-section">TESTIMONIALS</h3>
 
 <section id="testimonials">
+<<<<<<< HEAD
   <div class="testimonials">
     {{#if result}}
     {{#each result}}
     <div class="rating-and-timePosted">
+=======
+  <div class="reviews">
+    {{#if review}}
+    {{#each review }}
+    <div class="rating&timePosted">
+>>>>>>> 997a0e087270f7f40b20b57ba310e7db74124baa
       <div class="rating">
         <h3>{{rating}}</h3>
       </div>
       <div class="timePosted">
-        <small>{{timeago timestamp}}</small>
+        <small>{{name}}</small>
       </div>
     </div>
+<<<<<<< HEAD
     
     <div class="review">
       <h3>"{{review}}"</h3>
@@ -166,10 +174,22 @@
   </div>
   <div class="read-more-button">
     <h5>READ MORE</h5>
+=======
+    {{/each}}
+    {{/if}}
+>>>>>>> 997a0e087270f7f40b20b57ba310e7db74124baa
   </div>
-</div>
 
+  <div class="review-button">
+    <div class="write-review-button">
+      <h5 class="btn-createReviewModal">WRITE A REVIEW</h5>
+    </div>
+    <div class="read-more-button">
+      <h5>READ MORE</h5>
+    </div>
+  </div>
 </section>
+
 
 {{!-- Gallery section --}}
 <hr class="new-section-line">
