@@ -2,6 +2,7 @@ let routes = require('./route');
 let express = require('express');
 let path = require('path');
 let exphbs = require('express-handlebars');
+let moment = require('moment');
 let morgan = require('morgan');
 let favicon = require('serve-favicon');
 let bodyParser = require('body-parser');
@@ -21,7 +22,11 @@ module.exports = function (app) {
         'defaultlayout': 'main',
         'layoutsDir': app.get('views') + '/layouts',
         'partialsDir': app.get('views') + '/partials',
-        'helpers': {}
+        'helpers': {
+            'timeago' :function(timestamp){
+                return moment(timestamp).startOf('minute').fromNow();
+            }
+        }
     }).engine);
     app.set('view engine', 'handlebars');
 

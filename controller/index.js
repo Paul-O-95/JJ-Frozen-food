@@ -27,13 +27,13 @@ module.exports = {
 
 
     review: async function (req, res, next) {
-        const { rating, review, name } = req.body;
+        const { rating, testimonial, name } = req.body;
 
-        let newReviewModel = new ReviewModel({ rating, review, name });
-        newReviewModel.save(function (err, result) {
+        let newReviewModel = new ReviewModel({ rating, testimonial, name });
+        newReviewModel.save(function (err, review) {
             if (err) throw err;
-            console.log(result)
-            res.redirect(`/#${result._id}`);
+            console.log(review)
+            res.redirect(`/#${review._id}`);
             
         });
     }

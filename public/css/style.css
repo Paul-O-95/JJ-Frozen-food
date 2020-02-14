@@ -191,9 +191,12 @@ h4 span i{
     cursor: pointer;
   }
 
+  .testimonials{
+    width: 30%;
+  }
+
   .rating-and-timePosted{
     display: flex;
-    flex-direction: row;
   }
 
   /*Review Modal*/
