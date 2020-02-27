@@ -1,7 +1,7 @@
 <section class="text-center">
   <div>
     <h1>
-      JJ FROZEN FOOD
+      <span class="jj">JJ</span> FROZEN FOOD
     </h1>
     <p style="font-size: 15px;">BUY YOUR FOOD STUFF &amp; FROZEN FOODS HERE</p>
     <p style="font-size: 15px;" class="opening-time"></p>
@@ -135,20 +135,29 @@
 <h3 class="text-center new-section">TESTIMONIALS</h3>
 
 <section id="testimonials">
-  <div>
+  <div style="display: flex;justify-content: space-between;width:100%;">
     {{#if review}}
     {{#each review}}
     <div class="testimonials">
       <div class="rating-and-timePosted">
-        <div class="rating">
-          <h4>{{rating}}</h4>
+        <div class="rate1">
+          <input type="radio" id="star55" name="rate1" value="5"/>
+          <label for="star55" title="text">5 stars</label>
+          <input type="radio" id="star44" name="rate1" value="4" />
+          <label for="star44" title="text">4 stars</label>
+          <input type="radio" id="star33" name="rate1" value="3" />
+          <label for="star33" title="text">3 stars</label>
+          <input type="radio" id="star22" name="rate1" value="2" />
+          <label for="star22" title="text">2 stars</label>
+          <input type="radio" id="star11" name="rate1" value="1" />
+          <label for="star11" title="text">1 star</label>
         </div>
         <div class="timePosted">
           <p>{{timeago timestamp}}</p>
         </div>
       </div>
-      <div class="review">
-        <h4>"{{testimonial}}"</h4>
+      <div class="review" style="font-size: 17px;">
+        <p>"{{testimonial}}"</p>
       </div>
       <div class="name">
         <h5 style ="font-weight:bold; color:rgb(70, 115, 199)">- {{name}}</h5>
@@ -217,7 +226,7 @@
         <p>Thu: 8:00 AM - 22:00 PM</p>
         <p>Fri: 8:00 AM - 22:00 PM</p>
         <p>Sat: 8:00 AM - 22:00 PM</p>
-        <p>Sun: 8:00 AM - 2:00 PM</p>
+        <p>Sun: 8:00 AM - 4:00 PM</p>
       </div>
     </div>
   </div>

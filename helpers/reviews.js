@@ -3,7 +3,7 @@ let async = require('async');
 
 module.exports = {
     newest: function(callback){
-        reviewModel.find({}, {}, {limits:3, sort: {timestamp: -1}},
+        reviewModel.find({}, {}, {limits:5, sort: {timestamp: -1}},
             function(err, reviews){
                 if(err){throw err}
 
