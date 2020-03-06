@@ -182,17 +182,14 @@ h1 {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .write-review-button :hover {
   color: rgb(109, 141, 199);
   border-color: rgb(109, 141, 199);
 }
-=======
-<<<<<<< HEAD
-  .testimonials{
-    width: 30%;
-  }
->>>>>>> updated
+
+.testimonials {
+  width: 30%;
+}
 
 .read-more-button :hover {
   color: rgb(109, 141, 199);
@@ -208,7 +205,6 @@ h1 {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 /*Review Modal*/
 .fade-scale {
   transform: scale(0);
@@ -218,31 +214,10 @@ h1 {
   transition: all 0.25s linear;
 }
 
-.fade-scale.in {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.review-modal-form {
-  margin-left: 10px;
-  margin-top: -15px;
-}
-
-=======
-  /*Review Modal*/
-  .fade-scale {
-    transform: scale(0);
-    opacity: 0;
-    -webkit-transition: all .25s linear;
-    -o-transition: all .25s linear;
-    transition: all .25s linear;
-  }
-=======
 .write-review-button :hover {
   color: rgb(109, 141, 199);
   border-color: rgb(109, 141, 199);
 }
->>>>>>> updated
 
 .read-more-button :hover {
   color: rgb(109, 141, 199);
@@ -277,7 +252,6 @@ h1 {
   margin-top: -15px;
 }
 
->>>>>>> updated
 .rate {
   float: left;
   margin-left: 13px;
